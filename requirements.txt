@@ -4,3 +4,9 @@ sklearn
 fitz
 rabbitmq
 pika
+PyPDF2
+langchain
+langchain_openai
+langchain_community
+sentence_transformers
+chromadb
