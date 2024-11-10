@@ -2,3 +2,5 @@ openai
 python-dotenv
 sklearn
 fitz
+rabbitmq
+pika
