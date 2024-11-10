@@ -2,7 +2,6 @@ import openai
 from dotenv import load_dotenv
 import os
 import re
-from concurrent.futures import ThreadPoolExecutor
 from sklearn.metrics.pairwise import cosine_similarity
 
 from chat_client import ChatClient
