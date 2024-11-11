@@ -11,7 +11,6 @@ from typing import List
 
 # Import custom modules
 from services.document_processor import DocumentProcessor
-from services.embedding_service import EmbeddingService
 from services.cache_service import RedisCache
 from services.llm_service import LLMService, ChatResponse
 from services.ir_service import IRService
@@ -72,7 +71,6 @@ async def upload_pdf(file: UploadFile = File(...)):
     try:
         # Process PDF and generate embeddings
         content = await doc_processor.process_pdf(file)
-        # embedding_service.generate_embeddings(content)
         ir_service.add_document(content)
         return {"message": "PDF processed successfully"}
     

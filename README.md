@@ -18,7 +18,8 @@ To install and run the FAO chatbot, follow these steps:
 3. Configure the chatbot settings: Open the `config.js` file and update the necessary configuration parameters, such as API keys and database credentials.
 4. Start the chatbot app: `npm start`
 5. Start the chatbot server: `python main.py`
-6. Access the chatbot interface: Open your web browser and navigate to `http://localhost:3000`
+6. Start redis server for cache: `redis-server` `redis-cli`
+7. Access the chatbot interface: Open your web browser and navigate to `http://localhost:3000`
 
 ## Usage
 Once the chatbot is up and running, users can interact with it by typing their queries in the chat interface. The chatbot will analyze the input and provide relevant responses based on the available knowledge base.
